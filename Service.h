@@ -12,8 +12,10 @@ public:
     Service(const Repo<Produs>& repository);
 
     void addProdus(char* nume, int pret, int nr_exemplare);
-    void updateProdus(char* numeVechi, int pretVechi, int nr_exemplareVechi, char* nume, int pret, int nr_exemplare);
-    void removeProdus(char* nume, int pret, int nr_exemplare);
+    void updateProdus(int id, char* numeVechi, int pretVechi, int nr_exemplareVechi, char* nume, int pret, int nr_exemplare);
+    void removeProdus(int id, char* nume, int pret, int nr_exemplare); 
+    int cumparaProdus(int id, char* nume, int nr_exemplare);
+    int returneazaProdus(int id, char* nume, int nr_exemplare);
 
     set<Produs> getAll();
 

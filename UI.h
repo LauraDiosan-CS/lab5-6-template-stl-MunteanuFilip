@@ -16,5 +16,11 @@ public:
     void deleteProdus();
     void displayProdus();
     void show_menu();
+    void cumparaProdus();
+    void returneazaProdus();
     int run();
+    void display();
+
+    //void cumparareProdus();
+    //void returnareProdus();
 };

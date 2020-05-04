@@ -18,6 +18,14 @@ public:
 
 	int find(const T& el);
 	int getSize();
+	T getElement(int id)
+	{
+		return this->elem[id];
+	}
+
+	void clear() {
+		this->elem.clear();
+	}
 
 	set<T> getAll();
 };
@@ -65,19 +73,6 @@ set<T> Repo<T>::getAll()
 {
 	return elem;
 }
-
-/*
-template<class T>
-int Repo<T>::find(const T &e)
-{
-	list<T>::iterator;
-	iterator= find(elem.begin(), elem.end(), e);
-	if (iterator != elem.end()) return distance(elem.begin(), iterator);
-	return -1;
-}
-*/
-
-
 
 template<class T>
 Repo<T>::Repo(const Repo<T>& repo)
